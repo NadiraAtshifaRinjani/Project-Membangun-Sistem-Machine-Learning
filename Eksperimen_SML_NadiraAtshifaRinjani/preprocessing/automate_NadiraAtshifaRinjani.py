@@ -51,13 +51,19 @@ def preprocess_pipeline(input_path, output_path):
     df = transform_features(df)
     df = encode_features(df)
     df = scale_features(df)
+
+    import os
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
     df.to_csv(output_path, index=False)
     print("Preprocessing selesai ✅")
     return df
+
 
 if __name__ == "__main__":
     preprocess_pipeline(
         "Eksperimen_SML_NadiraAtshifaRinjani/datasetrumah_raw/datarumah.csv",
         "Eksperimen_SML_NadiraAtshifaRinjani/preprocessing/datasetrumah_preprocessing/data_preprocessed.csv"
     )
+
 
