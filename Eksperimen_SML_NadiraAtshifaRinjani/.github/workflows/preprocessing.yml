@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: preprocessed-dataset
-          path: Eksperimen_SML_NadiraAtshifaRinjani/preprocessing/datasetrumah_preprocessing/data_preprocessed.csv"
+          path: Eksperimen_SML_NadiraAtshifaRinjani/preprocessing/datasetrumah_preprocessing/data_preprocessed.csv
