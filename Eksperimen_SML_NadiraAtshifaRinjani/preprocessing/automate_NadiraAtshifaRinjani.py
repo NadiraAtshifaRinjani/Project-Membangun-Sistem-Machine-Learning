@@ -57,6 +57,7 @@ def preprocess_pipeline(input_path, output_path):
 
 if __name__ == "__main__":
     preprocess_pipeline(
-        "../datasetrumah_raw/datarumah.csv",
-        "datarumah_preprocessing/data_preprocessed.csv"
+        "Eksperimen_SML_NadiraAtshifaRinjani/datasetrumah_raw/datarumah.csv",
+        "Eksperimen_SML_NadiraAtshifaRinjani/preprocessing/datasetrumah_preprocessing/data_preprocessed.csv"
     )
+
